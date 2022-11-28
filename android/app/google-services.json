@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "797179525518",
+    "project_id": "snack-49e96",
+    "storage_bucket": "snack-49e96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797179525518:android:72874a3c64beaf83fb0cdf",
+        "android_client_info": {
+          "package_name": "com.example.snack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797179525518-rr50qb4rdurd6tnhl8jbqplm2ihrubp2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABxjSvvDPi2KZOH7LLJc0WYWfhdOnPLJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797179525518-rr50qb4rdurd6tnhl8jbqplm2ihrubp2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

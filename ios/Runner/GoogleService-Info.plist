@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>797179525518-f9rjdsr3jadp61e02j60abp6su0ac42e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.797179525518-f9rjdsr3jadp61e02j60abp6su0ac42e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCKNoyqfiwDsSKvoa_W1jMMx1iCebv96WU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>797179525518</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.snack</string>
+	<key>PROJECT_ID</key>
+	<string>snack-49e96</string>
+	<key>STORAGE_BUCKET</key>
+	<string>snack-49e96.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:797179525518:ios:7f72e3271f8675a0fb0cdf</string>
+</dict>
+</plist>

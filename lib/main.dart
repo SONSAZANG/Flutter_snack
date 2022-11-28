@@ -1,48 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:snack/screens/login_screen.dart';
+import 'package:snack/screens/home_screen.dart';
+import 'package:snack/screens/onboarding_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:snack/firebase_options.dart';
 
-import 'onboarding.dart';
-
-void main() => runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: OnBoardingPage(),
-    );
-  }
-}
-
-class MyPage extends StatelessWidget {
-  const MyPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Main Page'),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.deepOrange,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text(
-              'Main Screen',
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-            ),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                        builder: (context) => const OnBoardingPage()),
-                  );
-                },
-                child: const Text('Go to onboarding screen')),
-          ],
-        ),
-      ),
+      routes: {
+        "/": (context) => OnboardingScreen(),
+        "/home": (context) => const HomeScreen(),
+        "/login": (context) => const LoginScreen(),
+      },
     );
   }
 }
