@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         "/": (context) => OnboardingScreen(),
-        "/home": (context) => const HomeScreen(),
+        "/home": (context) => HomeScreen(),
         "/login": (context) => const LoginScreen(),
       },
     );
