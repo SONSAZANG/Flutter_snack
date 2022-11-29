@@ -98,47 +98,102 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                     Container(
                       color: Colors.white,
                       alignment: Alignment.center,
-                      child: Column(
-                        children: [
-                          TextFormField(
-                            controller: _loginemailController,
-                            decoration:
-                                const InputDecoration(labelText: 'Email'),
-                          ),
-                          TextFormField(
-                            controller: _loginpasswordController,
-                            decoration: const InputDecoration(
-                              labelText: 'Password',
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            TextFormField(
+                              controller: _loginemailController,
+                              decoration: const InputDecoration(
+                                labelText: 'Email',
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)),
+                                  borderSide:
+                                      BorderSide(color: Colors.deepOrange),
+                                ),
+                              ),
                             ),
-                            obscureText: true,
-                          ),
-                          ElevatedButton(
-                            onPressed: signIn,
-                            child: Text('SignIn'),
-                          ),
-                        ],
+                            SizedBox(
+                              width: double.infinity,
+                              height: 5,
+                            ),
+                            TextFormField(
+                              controller: _loginpasswordController,
+                              decoration: const InputDecoration(
+                                labelText: 'Password',
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)),
+                                  borderSide:
+                                      BorderSide(color: Colors.deepOrange),
+                                ),
+                              ),
+                              obscureText: true,
+                            ),
+                            SizedBox(
+                              width: double.infinity,
+                              height: 5,
+                            ),
+                            ElevatedButton(
+                              onPressed: signIn,
+                              child: Text('SignIn'),
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(320, 50),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     Container(
                       color: Colors.white,
                       alignment: Alignment.center,
-                      child: Column(
-                        children: [
-                          TextFormField(
-                            controller: _signinemailController,
-                            decoration:
-                                const InputDecoration(labelText: 'Email'),
-                          ),
-                          TextFormField(
-                            controller: _signinpasswordController,
-                            decoration:
-                                const InputDecoration(labelText: 'Password'),
-                          ),
-                          ElevatedButton(
-                            onPressed: createUser,
-                            child: Text('Register'),
-                          ),
-                        ],
+                      child: Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          children: [
+                            TextFormField(
+                              controller: _signinemailController,
+                              decoration: const InputDecoration(
+                                labelText: 'Email',
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)),
+                                  borderSide:
+                                      BorderSide(color: Colors.deepOrange),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: double.infinity,
+                              height: 5,
+                            ),
+                            TextFormField(
+                              controller: _signinpasswordController,
+                              decoration: const InputDecoration(
+                                labelText: 'Password',
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(20)),
+                                  borderSide:
+                                      BorderSide(color: Colors.deepOrange),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              width: double.infinity,
+                              height: 5,
+                            ),
+                            ElevatedButton(
+                              onPressed: createUser,
+                              child: Text('Register'),
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(320, 50),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     )
                   ],
